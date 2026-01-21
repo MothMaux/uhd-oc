@@ -1,5 +1,18 @@
-# USRP Hardware Driver (UHD™) Software
+# USRP B210 Overclock
+### This is a fork of the official USRP Hardware Driver (UHD™) Software
 
+To install the host firmware:
+```
+mkdir host/build && cd host/build
+cmake ../
+make -j4 && sudo make install
+```
+Thanks to the developers at UHD for the wonderful commentary :3 
+
+
+and the rest of the readme I will leave here:
+
+# USRP Hardware Driver (UHD™) Software
 Welcome to the UHD™ software distribution! UHD is the free & open-source
 software driver and API for the Universal Software Radio Peripheral (USRP™) SDR
 platform, created and sold by Ettus Research.
