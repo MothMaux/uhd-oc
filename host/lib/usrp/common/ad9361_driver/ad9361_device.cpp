@@ -1553,7 +1553,6 @@ double ad9361_device_t::_setup_rates(const double rate)
     if (rate > 104e6) {
         /* Filtering acts weird above ~104msps - *shrug* slapping with WIP sticker */
         _io_iface->poke8(0x0F6, 0x03);  // -12dB RX digital gain (not amplifier gain)
-        _io_iface->poke8(0x006, _io_iface->peek8(0x006) + 0x22); // Add RX timing margin
     }
 
     UHD_LOG_TRACE("AD936X", "[ad9361_device_t::_setup_rates] adcclk=" << adcclk);
