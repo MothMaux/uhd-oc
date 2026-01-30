@@ -4,11 +4,6 @@
 ## Warnings and issues!
 Overclocking your SDR will void your warranty, Ettus and AnalogDevices warn that overclocking the AD9361 can lead to degraded performance and possible damage to your device, proceed with caution.
 
-This overclock is stable up to 100msps*, at about 104e6 sps signal quality becomes visually degraded on FFT / Constellation. Actively researching any ways to fix this, but it may be inevitable. 
-If you would like to have fun breaking things and would like to help improve the performance of higher samplerates for the b210 it's greatly appreciated
-
-<sup><sub>*on my device, results may vary</sub></sup>
-
 ### To install the host firmware:
 ```
 mkdir host/build && cd host/build
@@ -16,10 +11,10 @@ cmake ../
 make -j4 && sudo make install
 sudo ldconfig #reload libraries
 ```
-Thanks to the developers at UHD for the wonderful commentary :3 
+If you need help installing, see [Seler1500's Guide](https://github.com/seler1500/LibreSDR-B210-setup) on setting up.
 
-
-and the rest of the readme I will leave here:
+t/n: Thanks to the developers at UHD for the wonderful commentary :3 
+and the rest of their readme I will leave here:
 
 # USRP Hardware Driver (UHD™) Software
 Welcome to the UHD™ software distribution! UHD is the free & open-source
