@@ -1,6 +1,9 @@
 # USRP B210 Overclock
 ### This is a fork of the official USRP Hardware Driver (UHD™) Software
 
+## Functionality
+This build exposes profiles for the USRP B210 FPGA SDR to request up to 122.88msps. Testing has been done with a LibreSDR clone and are not 1:1 - The same packing issue that was originally present above 104msps has yet to be resolved for the Genuine Ettus B210 SDRs. The limit for the genuine model is about 75msps for stable demodulation; this is currently being being worked on with limited access to genuine boards. 
+
 ## Warnings and issues!
 Overclocking your SDR will void your warranty, Ettus and AnalogDevices warn that overclocking the AD9361 can lead to degraded performance and possible damage to your device, proceed with caution.
 
