@@ -1217,7 +1217,7 @@ double ad9361_device_t::_tune_bbvco(const double rate)
     int vcodiv;
 
     /* Iterate over VCO dividers until appropriate divider is found. */
-    int i = 0;
+    int i = 1;
     for (; i <= 6; i++) {
         vcodiv  = 1 << i;
         vcorate = rate * vcodiv;
